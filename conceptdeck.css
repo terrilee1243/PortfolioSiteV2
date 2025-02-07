@@ -1,0 +1,52 @@
+body {
+    background: #080808;
+    color: #fff;
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0;
+    z-index: 1; 
+}
+
+.backbutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas:
+        "r b y"
+        "r b y"
+        "r b y";
+    gap: 20px;
+    padding: 20px; 
+    margin-top: 200px; 
+}
+
+.red, .blue, .yellow {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red img, .blue img, .yellow img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain; 
+}
